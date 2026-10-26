@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import logo from './rachatour-logo.svg'
+import Footer from './Footer'
 
 type Place = {
   title: string
@@ -114,7 +115,7 @@ function Home() {
       <section className="hero">
         <div className="hero-overlay" />
         <div className="hero-content page-width">
-          <span className="eyebrow"><span className="eyebrow-dot" /> შენი რაჭა იწყება აქ nanikooooooooooooooo</span>
+          <span className="eyebrow"><span className="eyebrow-dot" /> შენი რაჭა იწყება აქ</span>
           <h1>იგრძენი რაჭა<br /><em>თითოეული ამოსუნთქვით.</em></h1>
           <p>მთების სიჩუმე, ბუნების სურნელი, ადგილობრივი გემოები და ისტორიები, რომლებიც რაჭას განსაკუთრებულ სამყაროდ აქცევს.</p>
           <div className="hero-actions">
@@ -217,9 +218,9 @@ function InfoPage({ pageKey }: { pageKey: string }) {
   )
 }
 
-function Footer() {
-  return <footer className="site-footer"><div className="page-width footer-inner"><Link className="footer-brand" to="/">RachaTour<span>.</span></Link><p>რაჭის ადგილები, გემოები და ამბები — ერთ სივრცეში.</p><span className="footer-copy">© 2026 RachaTour · პირველი ვერსია</span></div></footer>
-}
+// function Footer() {
+//   return <footer className="site-footer"><div className="page-width footer-inner"><Link className="footer-brand" to="/">RachaTour<span>.</span></Link><p>რაჭის ადგილები, გემოები და ამბები — ერთ სივრცეში.</p><span className="footer-copy">© 2026 RachaTour · პირველი ვერსია</span></div></footer>
+// }
 
 export default function App() {
   return (
