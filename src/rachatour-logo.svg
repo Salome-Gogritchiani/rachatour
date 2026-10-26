@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">RachaTour — აღმოაჩინე რაჭა</title>
+  <desc id="desc">Dark green mountain range with snow accents, orange sun, pine trees and a winding valley line above the RachaTour wordmark.</desc>
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8C3A"/>
+      <stop offset="1" stop-color="#F6A45C"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 4)">
+    <!-- rising sun -->
+    <circle cx="602" cy="170" r="86" fill="url(#sun)"/>
+    <!-- distant mountain range -->
+    <path d="M185 365 L330 245 L389 282 L475 195 L548 253 L628 144 L710 225 L760 204 L866 294 L911 270 L1035 366 L890 340 L813 309 L752 326 L680 270 L625 304 L552 277 L485 321 L417 302 L340 342 Z" fill="#0F5132"/>
+    <!-- snow caps -->
+    <path d="M432 255 L475 195 L520 239 L490 229 L476 215 L454 247 Z" fill="#F8F9F7"/>
+    <path d="M583 225 L628 144 L678 215 L645 197 L629 172 L607 212 Z" fill="#F8F9F7"/>
+    <path d="M742 253 L760 204 L802 247 L774 235 L760 220 L752 245 Z" fill="#F8F9F7"/>
+    <!-- foreground peaks -->
+    <path d="M130 390 L298 272 L363 319 L452 246 L535 310 L628 218 L719 299 L779 276 L930 390 L795 359 L719 329 L652 348 L577 318 L517 349 L449 318 L380 358 L309 330 Z" fill="#06452D"/>
+    <path d="M250 306 L298 272 L340 302 L312 295 L298 283 L276 302 Z" fill="#F8F9F7"/>
+    <path d="M405 285 L452 246 L493 285 L466 276 L452 258 L431 280 Z" fill="#F8F9F7"/>
+    <path d="M581 260 L628 218 L673 270 L642 259 L628 237 L608 255 Z" fill="#F8F9F7"/>
+    <!-- pine trees on right ridge -->
+    <g fill="#0F5132">
+      <path d="M918 319 l18 -44 18 44 h-10 l17 26 h-50 l17 -26z"/>
+      <path d="M955 337 l14 -34 14 34 h-8 l13 20 h-38 l13 -20z"/>
+      <path d="M989 348 l12 -29 12 29 h-7 l11 17 h-32 l11 -17z"/>
+    </g>
+    <!-- winding valley / river, with warm highlight -->
+    <path d="M286 382 C397 348 512 349 603 364 C649 372 652 385 610 398 C566 412 582 427 651 429 C712 431 758 423 807 412 C761 442 701 452 639 447 C554 440 527 415 570 397 C604 383 565 378 512 378 C429 376 354 384 286 382 Z" fill="#0F5132"/>
+    <path d="M280 382 C383 355 470 355 543 362 C484 361 409 369 344 384 Z" fill="#FF8C3A"/>
+  </g>
+  <!-- wordmark -->
+  <text x="600" y="535" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="700" letter-spacing="-3">
+    <tspan fill="#0F5132">Racha</tspan><tspan fill="#FF8C3A">Tour</tspan>
+  </text>
+  <!-- Georgian tagline -->
+  <g fill="#0F5132" stroke="#0F5132" stroke-width="1.5">
+    <path d="M238 601 H365" fill="none" stroke-linecap="round" opacity=".55"/>
+    <path d="M835 601 H962" fill="none" stroke-linecap="round" opacity=".55"/>
+  </g>
+  <text x="600" y="615" text-anchor="middle" font-family="Noto Sans Georgian, Sylfaen, sans-serif" font-size="38" letter-spacing="3" fill="#0F5132">აღმოაჩინე რაჭა</text>
+</svg>
