@@ -114,7 +114,7 @@ function Home() {
       <section className="hero">
         <div className="hero-overlay" />
         <div className="hero-content page-width">
-          <span className="eyebrow"><span className="eyebrow-dot" /> შენი რაჭა იწყება აქ</span>
+          <span className="eyebrow"><span className="eyebrow-dot" /> შენი რაჭა იწყება აქ nanikooooooooooooooo</span>
           <h1>იგრძენი რაჭა<br /><em>თითოეული ამოსუნთქვით.</em></h1>
           <p>მთების სიჩუმე, ბუნების სურნელი, ადგილობრივი გემოები და ისტორიები, რომლებიც რაჭას განსაკუთრებულ სამყაროდ აქცევს.</p>
           <div className="hero-actions">
