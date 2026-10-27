@@ -41,11 +41,24 @@ const places: Place[] = [
 
 const categories = [
   { icon: '🏞️', title: 'ღირსშესანიშნაობები', subtitle: 'აღმოაჩინე რაჭის გამორჩეული ადგილები',image: '/categoriimage/lake.jpg', to: '/discover' },
-  { icon: '🛏️', title: 'სასტუმროები', subtitle: 'იპოვე შენთვის სასურველი დასარჩენი ადგილი', image: '/categoriimage/cotageforest.jpg', to: '/stays' },
+  { icon: '🛏️', title: 'სასტუმროები', subtitle: 'იპოვე შენთვის სასურველი დასარჩენი ადგილი', image: '/categoriimage/karse.jpg', to: '/stays' },
   { icon: '🍽️', title: 'რესტორნები', subtitle: 'დააგემოვნე რაჭული სამზარეულო', image: '/categoriimage/shqmeruli.jpg', to: '/food' },
-  { icon: '🍷', title: 'მარნები', subtitle: 'გაეცანი ადგილობრივ ღვინოსა და მეღვინეებს', image: '/images/attractions.jpg', to: '/wineries' },
-  { icon: '📍', title: 'ჩექ-ინები', subtitle: 'მონიშნე მონახულებული ადგილები', image: '/images/attractions.jpg', to: '/check-in' },
-  { icon: '🏡', title: 'ქონება', subtitle: 'მიწები, სახლები და განცხადებები', image: '/images/attractions.jpg', to: '/property' },
+  { icon: '🍷', title: 'მარნები', subtitle: 'გაეცანი ადგილობრივ ღვინოსა და მეღვინეებს', image: '/categoriimage/glassofvine.jpg', to: '/wineries' },
+  // { icon: '📍', title: 'ჩექ-ინები', subtitle: 'მონიშნე მონახულებული ადგილები', image: '/images/attractions.jpg', to: '/check-in' },
+  {
+  icon: '🧭',
+  title: 'გიდები',
+  subtitle: 'აღმოაჩინე რაჭა ადგილობრივებთან ერთად',
+  image: '/categoriimage/guides.jpg',
+  to: '/guides',
+},
+  {
+  icon: '🧺',
+  title: 'იყიდე რაჭაში',
+  subtitle: 'იყიდე და გაყიდე მიწა, ქონება და ადგილობრივი პროდუქცია',
+  image: '/categoriimage/product.jpg',
+  to: '/market',
+},
 ]
 
 const navItems = [
@@ -133,7 +146,7 @@ function Home() {
       <section className="section page-width category-section">
         <div className="section-heading">
           <div><span className="section-kicker">ერთი სივრცე — უამრავი შესაძლებლობა</span><h2>როგორ <em>აღმოაჩინო რაჭა?</em></h2></div>
-          <p>დაგეგმე მოგზაურობა შენს სტილში — შაბათ-კვირის დასვენებიდან ახალ აღმოჩენებამდე.</p>
+          <p>დაგეგმე მოგზაურობა შენს სტილში</p>
         </div> 
 
 
