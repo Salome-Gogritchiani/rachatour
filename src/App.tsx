@@ -40,12 +40,12 @@ const places: Place[] = [
 ]
 
 const categories = [
-  { icon: '🏞️', title: 'ღირსშესანიშნაობები', subtitle: 'აღმოაჩინე რაჭის გამორჩეული ადგილები', to: '/discover' },
-  { icon: '🛏️', title: 'სასტუმროები', subtitle: 'იპოვე შენთვის სასურველი დასარჩენი ადგილი', to: '/stays' },
-  { icon: '🍽️', title: 'რესტორნები', subtitle: 'დააგემოვნე რაჭული სამზარეულო', to: '/food' },
-  { icon: '🍷', title: 'მარნები', subtitle: 'გაეცანი ადგილობრივ ღვინოსა და მეღვინეებს', to: '/wineries' },
-  { icon: '📍', title: 'ჩექ-ინები', subtitle: 'მონიშნე მონახულებული ადგილები', to: '/check-in' },
-  { icon: '🏡', title: 'ქონება', subtitle: 'მიწები, სახლები და განცხადებები', to: '/property' },
+  { icon: '🏞️', title: 'ღირსშესანიშნაობები', subtitle: 'აღმოაჩინე რაჭის გამორჩეული ადგილები',image: '/categoriimage/lake.jpg', to: '/discover' },
+  { icon: '🛏️', title: 'სასტუმროები', subtitle: 'იპოვე შენთვის სასურველი დასარჩენი ადგილი', image: '/categoriimage/cotageforest.jpg', to: '/stays' },
+  { icon: '🍽️', title: 'რესტორნები', subtitle: 'დააგემოვნე რაჭული სამზარეულო', image: '/categoriimage/shqmeruli.jpg', to: '/food' },
+  { icon: '🍷', title: 'მარნები', subtitle: 'გაეცანი ადგილობრივ ღვინოსა და მეღვინეებს', image: '/images/attractions.jpg', to: '/wineries' },
+  { icon: '📍', title: 'ჩექ-ინები', subtitle: 'მონიშნე მონახულებული ადგილები', image: '/images/attractions.jpg', to: '/check-in' },
+  { icon: '🏡', title: 'ქონება', subtitle: 'მიწები, სახლები და განცხადებები', image: '/images/attractions.jpg', to: '/property' },
 ]
 
 const navItems = [
@@ -132,19 +132,30 @@ function Home() {
 
       <section className="section page-width category-section">
         <div className="section-heading">
-          <div><span className="section-kicker">ერთი სივრცე — უამრავი შესაძლებლობა</span><h2>როგორ გინდა <em>აღმოაჩინო რაჭა?</em></h2></div>
+          <div><span className="section-kicker">ერთი სივრცე — უამრავი შესაძლებლობა</span><h2>როგორ <em>აღმოაჩინო რაჭა?</em></h2></div>
           <p>დაგეგმე მოგზაურობა შენს სტილში — შაბათ-კვირის დასვენებიდან ახალ აღმოჩენებამდე.</p>
-        </div>
-        <div className="category-grid">
-          {categories.map(item => (
-            <Link className="category-card" to={item.to} key={item.title}>
-              <span className="category-icon">{item.icon}</span>
-              <span className="category-arrow">↗</span>
-              <h3>{item.title}</h3><p>{item.subtitle}</p>
-            </Link>
-          ))}
-        </div>
+        </div> 
+
+
+        {/* homepage categories */}
+       <div className="category-grid">
+  {categories.map(item => (
+    <Link
+      className="category-card"
+      to={item.to}
+      key={item.title}
+      style={{ backgroundImage: `url("${item.image}")` }}
+    >
+      <span className="category-icon">{item.icon}</span>
+      <span className="category-arrow">↗</span>
+      <h3>{item.title}</h3>
+      <p>{item.subtitle}</p>
+    </Link>
+  ))}
+</div>
       </section>
+               {/* homepage categories */}
+
 
       <section className="featured-section">
         <div className="page-width">
